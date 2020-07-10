@@ -1,15 +1,8 @@
 
-public abstract class Employee {
-	
+public class Client {
 	private String name;
 	private String cpf;
-	private double salary;
-	
-	public double getBonus() {
-		
-		return this.getSalary() * 0.05;
-		
-	}
+	private String profession;
 	
 	public String getName() {
 		return name;
@@ -27,12 +20,11 @@ public abstract class Employee {
 		this.cpf = cpf;
 	}
 	
-	public double getSalary() {
-		return salary;
+	public String getProfession() {
+		return profession;
 	}
 	
-	public void setSalary(double salary) {
-		this.salary = salary;
+	public void setProfession(String profession) {
+		this.profession = profession;
 	}
-	
 }
